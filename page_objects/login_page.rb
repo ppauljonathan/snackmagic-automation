@@ -1,7 +1,3 @@
-require 'capybara/dsl'
-require 'selenium-webdriver'
-require 'site_prism'
-
 class LoginPage < SitePrism::Page
   element :username, :xpath, '/html/body/div[1]/div/div[2]/div[5]/form[1]/div[1]/input'
   element :password, :xpath, '//*[@id="password-login"]'

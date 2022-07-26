@@ -1,8 +1,8 @@
 class TreatForm < SitePrism::Page
   element :treat_name, :xpath, '//*[@id="treatName"]'
   element :sender_name, :xpath, '//*[@id="senderName"]'
-  element :submit_button, :class, 'button-program-green'
-  elements :radio_buttons, :class, 'custom-border-radio-title'
+  element :submit_button, '.button-program-green'
+  elements :radio_buttons, '.custom-border-radio-title'
 
   def fill_details(name, sender)
     self.treat_name.set(name)

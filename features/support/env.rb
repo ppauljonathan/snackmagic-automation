@@ -7,5 +7,6 @@ BeforeAll do
   Capybara.default_driver = :selenium
   Capybara.register_driver :selenium do |app|
     Capybara::Selenium::Driver.new(app, browser: :firefox)
+    # @browser.manage.window.maximize
   end
 end

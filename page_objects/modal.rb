@@ -1,17 +1,17 @@
 class Modal < SitePrism::Page
-  elements :options, :class, 'custom-border-radio-content'
-  elements :submit_button, :class, 'button-program-green'
+  elements :options, '.custom-border-radio-content'
+  elements :submit_button, '.button-program-green'
   element :expected_count, :id, 'expectedCount'
   element :international_count, :id, 'internationalCount'
-  element :message, :tag_name, 'textarea'
-  element :checkout, :class, 'btn-primary'
+  element :message, 'textarea'
+  elements :checkout, '.btn-primary'
 
   def choose_option(index)
     self.options[index].click
   end
 
-  def submit_modal(index)
-    self.submit_button[index]
+  def submit_modal
+    self.submit_button[0].click
   end
 
   def fill_count_details(exp, intl)
@@ -24,6 +24,6 @@ class Modal < SitePrism::Page
   end
 
   def goto_checkout
-    self.checkout.click
+    self.checkout[0].click
   end
 end
