@@ -2,8 +2,8 @@ require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for(:firefox)
 
-driver.navigate.to('https://automation-frontend.snackmagic.com')
-sleep(15)
+driver.navigate.to('https://admin:admin@automation-frontend.snackmagic.com')
+sleep(5)
 
 driver.find_element(xpath: '/html/body/div[2]/div/div[2]/div/div/div/div/div[3]/header/div[2]/div[3]/div[2]/button').click # login button
 
