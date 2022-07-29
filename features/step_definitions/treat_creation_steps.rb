@@ -25,7 +25,7 @@ And('We log in successfully') do
   $login_page.fill_details('avneet+4444@vinsol.com',
                            'Vinsol1.')
   $login_page.submit_details
-  sleep(5)
+  sleep(10)
 end
 
 When('We create a treat') do
