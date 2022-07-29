@@ -1,6 +1,6 @@
 class Modal < SitePrism::Page
   elements :options, '.custom-border-radio-content'
-  elements :submit_button, '.button-program-green'
+  elements :submit_button, '.btn-primary'
   element :expected_count, :id, 'expectedCount'
   element :international_count, :id, 'internationalCount'
   element :message, 'textarea'
